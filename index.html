@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisClear</title>
+    <meta property="og:title" content="DisClear">
+    <meta property="og:description" content="Easily clear all application commands from your Discord bot!">
+    <meta property="og:image" content="https://cdn.mikn.dev/branding/MikanMascot.png">
+    <meta property="og:url" content="https://disclear.mikn.dev/">
+    <link rel="icon" type="image/x-icon" href="https://cdn.mikn.dev/branding/MikanMascot.png">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=anton:400" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+</head>
+<body>
+    <section class="hero is-fullheight is-danger">
+        <div class="container">
+            <br><br><br>
+            <h1 class="title is-1">DisClear</h1>
+            <h1 class="title is-4">Clear all Discord application commands easily!</h1>
+            <form>
+                <div class="field">
+                    <label class="label">Bot Token</label>
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" id="tokenInput" placeholder="Your token here">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Client ID</label>
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" id="idInput" placeholder="Your client ID here">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button id="ClearButton" class="button is-info is-rounded">Clear!</button>
+                    </div>
+                </div>
+                <br>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <div class="footer-content">
+                <img src="https://cdn.mikn.dev/branding/MikanMascot.png" alt="Logo" class="footer-logo">
+                <p class="footer-text">
+                    &copy; 2023 <a href="https://mikn.dev">MikanDev.</a> All Rights Reserved.
+                </p>
+                <div class="bulma-badge">
+                <a href="https://bulma.io">
+                    <img
+                      src="https://bulma.io/images/made-with-bulma.png"
+                      alt="Made with Bulma"
+                      width="128"
+                      height="24">
+                  </a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <script src="handler.js"></script>
+    <script>
+        kofiWidgetOverlay.draw('maamokun', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Donate',
+            'floating-chat.donateButton.background-color': '#f45d22',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+        </script>
+</body>
+</html>

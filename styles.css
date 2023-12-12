@@ -1,0 +1,103 @@
+/* styles.css */
+
+/* Style for the select element */
+body {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+select#domainSelect {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s; /* Add a smooth background color transition */
+}
+
+/* Style for the select options */
+select#domainSelect .domain-option {
+    padding: 10px;
+    transition: background-color 0.3s; /* Add a smooth background color transition */
+}
+
+/* Style for the domain images */
+.domain-image {
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 10px; /* Add some space between the image and text */
+    vertical-align: middle; /* Vertically align image and text */
+}
+
+.main-content {
+    min-height: calc(100vh - 140px); /* Calculate the height, accounting for the footer height and padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for the footer content */
+.footer .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style for the footer content container */
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the footer logo */
+.footer-logo {
+    max-width: 70px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Style for the footer text */
+.footer-text {
+    margin: 0; /* Remove default margin for the text */
+    text-align: left; /* Justify the text to the left */
+    font-size: 10px;
+}
+
+/* Style for the footer links */
+.footer-links {
+    display: flex; /* Make the links flex items */
+}
+
+/* Style for individual footer links */
+.footer-links a {
+    color: #fff; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Add spacing between links */
+}
+
+/* Style for the Bulma badge */
+.bulma-badge {
+    display: flex;
+    margin-left: 300px;
+}
+
+.swal-popup {
+    font-family: Arial, sans-serif !important; /* Replace with your desired font */
+    font-size: 18px !important; /* Replace with your desired font size */
+    width: 800px !important; /* Replace with your desired width */
+    height: 500px !important; /* Replace with your desired height */
+    margin: 0 auto !important; /* Center the Swal box horizontally */
+}
